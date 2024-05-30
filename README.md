@@ -1,4 +1,4 @@
-# Payment Details Application
+# Angular 17 - Payment Details Manager
 
 This is an Angular application for managing payment details. The application allows you to create, read, update, and delete payment details.
 
@@ -31,8 +31,8 @@ The project is structured into several parts:
 
 To run this project, you need to have Node.js and Angular CLI installed on your machine. Then, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/payment-details-app.git`
-2. Navigate into the project directory: `cd payment-details-app`
+1. Clone the repository: `git clone https://github.com/yourusername/angular-17-payment-manager.git`
+2. Navigate into the project directory: `cd angular-17-payment-manager`
 3. Install the dependencies: `npm install`
 4. Start the development server: `ng serve`
 5. Open your browser and navigate to `http://localhost:4200`
