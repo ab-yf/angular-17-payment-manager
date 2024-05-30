@@ -1,27 +1,46 @@
-# PaymentDetailsApp
+# Payment Details Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+This is an Angular application for managing payment details. The application allows you to create, read, update, and delete payment details.
 
-## Development server
+## Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular
+- TypeScript
+- ASP.NET Core Web API
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- View all payment details
+- Add a new payment detail
+- Update an existing payment detail
+- Delete a payment detail
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The project is structured into several parts:
 
-## Running unit tests
+- `PaymentDetailService`: This is an Angular service that handles communication with the server. It uses the `HttpClient` module to send HTTP requests.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- `PaymentDetail`: This is a model class that represents a payment detail. It includes properties like `paymentDetailId`, `cardOwnerName`, `cardNumber`, `expirationDate`, and `securityCode`.
 
-## Running end-to-end tests
+- `PaymentDetailsComponent`: This is an Angular component that displays the list of payment details. It uses the `PaymentDetailService` to fetch the data.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `PaymentDetailFormComponent`: This is an Angular component that provides a form for adding and updating payment details. It also uses the `PaymentDetailService` to send the data to the server.
 
-## Further help
+## Setup
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To run this project, you need to have Node.js and Angular CLI installed on your machine. Then, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/yourusername/payment-details-app.git`
+2. Navigate into the project directory: `cd payment-details-app`
+3. Install the dependencies: `npm install`
+4. Start the development server: `ng serve`
+5. Open your browser and navigate to `http://localhost:4200`
+
+## Contributing
+
+Contributions are welcome! Please read the contributing guide to learn how to contribute to this project.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
